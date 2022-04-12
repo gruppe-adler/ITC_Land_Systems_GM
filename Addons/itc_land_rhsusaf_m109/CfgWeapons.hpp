@@ -1,7 +1,7 @@
 class CfgWeapons {
-	class cannon_155mm;
-	class rhs_weap_m284: cannon_155mm {class Single1;};
-	class itc_land_rhs_weap_m284: rhs_weap_m284 {
+	class gm_cannon_base;
+	class gm_155mm_m126_base : gm_cannon_base { class range_01_single; };
+	class itc_land_gm_weap_m126: gm_155mm_m126_base {
 		scope = 1;
 		displayName = "Howitzer 155 mm";
 		autoReload = 0;
@@ -25,3 +25,6 @@ class CfgWeapons {
 		
 
 };
+
+
+

@@ -1,11 +1,11 @@
  class CfgPatches {
-	class itc_land_rhsusaf_m109	{
-		units[] = {	"itc_land_rhsusf_m109d_usarmy","itc_land_rhsusf_m109_usarmy" };
+	class itc_land_gm_m109	{
+		units[] = {	"itc_land_gm_ge_army_m109g","itc_land_gm_dk_army_m109" };
 		weapons[] = {};
 		requiredVersion = 1.8;
-		requiredAddons[] = {"rhsusf_main", "rhsusf_c_troops", "A3_Armor_F_Slammer", "rhsusf_c_heavyweapons","rhsusf_c_m109","itc_land_veh_sights","itc_land_sphammohandler"};
-		author = "RHS + ITC Addons Team";
-		authors[] = {"RHS","ToadBall","Yax"};
+		requiredAddons[] = {"gm_core", "A3_Armor_F_Slammer", "gm_m109", "itc_land_veh_sights","itc_land_sphammohandler"};
+		author = "nomisum";
+		authors[] = {"Toadball", "nomisum"};
 	};
 };
 

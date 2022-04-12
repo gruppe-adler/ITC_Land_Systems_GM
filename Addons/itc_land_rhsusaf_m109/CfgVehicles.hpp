@@ -14,6 +14,9 @@
 #define mag_24(a) a, a, a, a, a, a, a, a, a, a, a, a,a, a, a, a, a, a, a, a, a, a, a, a
 // Tank > Tank_F > MBT_01_base_F > MBT_01_arty_base_F > rhsusf_m109tank_base
 
+gm_ge_army_m109g
+gm_dk_army_m109
+
 class CfgVehicles {
 	class LandVehicle;
 	class Tank: LandVehicle {
@@ -26,21 +29,21 @@ class CfgVehicles {
 		};
 		class AnimationSources;
 	};
-	class MBT_01_base_F: Tank_F {
+	class gm_tracked_base: Tank_F {
         class ACE_SelfActions: ACE_SelfActions {};
 		class Turrets: Turrets {
 				class MainTurret: MainTurret {};
 		};
 		class AnimationSources: AnimationSources {};
 	};
-	class MBT_01_arty_base_F: MBT_01_base_F {
+	class gm_tracked_Artillery_base: gm_tracked_base {
         class ACE_SelfActions: ACE_SelfActions {};
 		class AnimationSources: AnimationSources {};
 		class Turrets: Turrets {
 				class MainTurret: MainTurret { };
 		};
 	};
-	class B_MBT_01_arty_base_F: MBT_01_arty_base_F {
+	class gm_m109_base: gm_tracked_Artillery_base {
         class ACE_SelfActions: ACE_SelfActions {};
 		class AnimationSources: AnimationSources {};
 		class Turrets: Turrets {
@@ -48,22 +51,29 @@ class CfgVehicles {
 		};
 	};
 
-	class rhsusf_m109tank_base : B_MBT_01_arty_base_F {
+	class gm_m109g_base : gm_m109_base {
         class ACE_SelfActions: ACE_SelfActions {};
 		class AnimationSources: AnimationSources {};
 		class Turrets: Turrets {
 				class MainTurret: MainTurret { };
 		};
 	};
-	class rhsusf_m109_usarmy: rhsusf_m109tank_base {
+	class gm_ge_army_m109g_base: gm_m109g_base {
         class ACE_SelfActions: ACE_SelfActions {};
 		class AnimationSources: AnimationSources {};
 		class Turrets: Turrets {
 				class MainTurret: MainTurret { };
 		};
 	};
-	class itc_land_rhsusf_m109_usarmy: rhsusf_m109_usarmy {
-		displayname = "M109A6 mod. 0 Paladin 2 (WD)";
+	class gm_dk_army_m109_base: gm_m109g_base {
+        class ACE_SelfActions: ACE_SelfActions {};
+		class AnimationSources: AnimationSources {};
+		class Turrets: Turrets {
+				class MainTurret: MainTurret { };
+		};
+	};
+	class itc_land_gm_ge_army_m109g: gm_ge_army_m109g_base {
+		displayname = "M109G mod. 0 Paladin 2 (WD) GER";
 		scopeCurator = 2;
         class ACE_SelfActions: ACE_SelfActions {
             class ITC_Land_SPHammohandler {
@@ -90,7 +100,7 @@ class CfgVehicles {
 		class Turrets: Turrets {
 			class MainTurret: MainTurret {
 				turretInfoType = "ITC_Land_RscAltGunnerSightSPH";
-				weapons[] = {"itc_land_rhs_weap_m284"};
+				weapons[] = {"itc_land_gm_weap_m126"};
 				magazines[] = {
 					//	rhs_mag_155mm_m795_28, rhs_mag_155mm_m825a1_2, rhs_mag_155mm_485_2, rhs_mag_155mm_m712_2, rhs_mag_155mm_m731_1, rhs_mag_155mm_raams_1, rhs_mag_155mm_m864_3
 					mag_24("itc_land_m109hex"),
@@ -108,15 +118,9 @@ class CfgVehicles {
 		};
 		class AnimationSources: AnimationSources {};
 	};
-	class rhsusf_m109d_usarmy: rhsusf_m109_usarmy {
-        class ACE_SelfActions: ACE_SelfActions {};
-		class AnimationSources: AnimationSources {};
-		class Turrets: Turrets {
-				class MainTurret: MainTurret { };
-		};
-	};
-	class itc_land_rhsusf_m109d_usarmy: rhsusf_m109d_usarmy {
-		displayname = "M109A6 mod. 0 Paladin 2 (DES)";
+
+	class itc_land_gm_dk_army_m109: gm_dk_army_m109_base {
+		displayname = "M109 mod. 0 Paladin 2 (WD) DK";
 		scopeCurator = 2;
         class ACE_SelfActions: ACE_SelfActions {
             class ITC_Land_SPHammohandler {
@@ -131,7 +135,7 @@ class CfgVehicles {
 				statement = "[_target] call itc_land_tablet_fnc_openVehicleTablet";
 			};
 		};
-    artilleryScanner = 0;
+		artilleryScanner = 0;
 		class itc_land {
   		  loaderType = 1; // semi automatic
 			tabletInterfaces[] = {"spg"};
@@ -143,7 +147,7 @@ class CfgVehicles {
 		class Turrets: Turrets {
 			class MainTurret: MainTurret {
 				turretInfoType = "ITC_Land_RscAltGunnerSightSPH";
-				weapons[] = {"itc_land_rhs_weap_m284"};
+				weapons[] = {"itc_land_gm_weap_m126"};
 				magazines[] = {
 					//	rhs_mag_155mm_m795_28, rhs_mag_155mm_m825a1_2, rhs_mag_155mm_485_2, rhs_mag_155mm_m712_2, rhs_mag_155mm_m731_1, rhs_mag_155mm_raams_1, rhs_mag_155mm_m864_3
 					mag_24("itc_land_m109hex"),
