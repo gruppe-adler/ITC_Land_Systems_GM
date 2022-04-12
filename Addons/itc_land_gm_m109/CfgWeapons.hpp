@@ -9,7 +9,7 @@ class CfgWeapons {
 		reloadTime = 1;
 		magazineReloadTime = 6;	
 		#include "CfgWeapons_howitzers_magazinesm109.hpp"
-		class Single: Single1 {
+		class Single: range_01_single {
 			displayName = "";
 			artilleryCharge = 1;
 			reloadTime = 6;			

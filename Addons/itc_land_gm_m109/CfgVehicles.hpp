@@ -14,9 +14,6 @@
 #define mag_24(a) a, a, a, a, a, a, a, a, a, a, a, a,a, a, a, a, a, a, a, a, a, a, a, a
 // Tank > Tank_F > MBT_01_base_F > MBT_01_arty_base_F > rhsusf_m109tank_base
 
-gm_ge_army_m109g
-gm_dk_army_m109
-
 class CfgVehicles {
 	class LandVehicle;
 	class Tank: LandVehicle {
