@@ -12,7 +12,6 @@
 #define mag_11(a) a, a, a, a, a, a, a, a, a, a, a
 #define mag_12(a) a, a, a, a, a, a, a, a, a, a, a, a
 #define mag_24(a) a, a, a, a, a, a, a, a, a, a, a, a,a, a, a, a, a, a, a, a, a, a, a, a
-// Tank > Tank_F > MBT_01_base_F > MBT_01_arty_base_F > rhsusf_m109tank_base
 
 class CfgVehicles {
 	class LandVehicle;

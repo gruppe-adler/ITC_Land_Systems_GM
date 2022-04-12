@@ -6,7 +6,7 @@ class CfgMagazines {
 		ammo = "itc_land_155mm";
 		displayNameShort = "M795 HE";
 		itc_land_charge_format = "itc_land_m109hex_chg%1";
-		itc_land_btabListFile = "itc_land_rhsusaf_m109\ballistics\tables\m109\list.sqf";
+		itc_land_btabListFile = "itc_land_gm_m109\ballistics\tables\m109\list.sqf";
 	};
 	class itc_land_m109hex_chg1: itc_land_m109hex { initSpeed = 92; itc_land_CountInAH = 0;  };
 	class itc_land_m109hex_chg2: itc_land_m109hex { initSpeed = 170; itc_land_CountInAH = 0;  };
@@ -21,7 +21,7 @@ class CfgMagazines {
 		displayNameShort = "M825A1 SMOKE";
 		itc_land_charge_format = "itc_land_m109smo_chg%1";
 		itc_land_timeModifier = -1.5;
-		itc_land_btabListFile = "itc_land_rhsusaf_m109\ballistics\tables\m109\list.sqf";
+		itc_land_btabListFile = "itc_land_gm_m109\ballistics\tables\m109\list.sqf";
 	};
 	class itc_land_m109smo_chg1: itc_land_m109smo { initSpeed = 92; itc_land_CountInAH = 0;  };
 	class itc_land_m109smo_chg2: itc_land_m109smo { initSpeed = 170; itc_land_CountInAH = 0;  };
@@ -35,7 +35,7 @@ class CfgMagazines {
 		displayName = "M864 ICM";
 		displayNameShort = "M864 ICM";
 		itc_land_charge_format = "itc_land_m109icm_chg%1";
-		itc_land_btabListFile = "itc_land_rhsusaf_m109\ballistics\tables\m109\list.sqf";
+		itc_land_btabListFile = "itc_land_gm_m109\ballistics\tables\m109\list.sqf";
 	};
 	class itc_land_m109icm_chg1: itc_land_m109icm { initSpeed = 92; itc_land_CountInAH = 0;  };
 	class itc_land_m109icm_chg2: itc_land_m109icm { initSpeed = 170; itc_land_CountInAH = 0;  };
@@ -50,7 +50,7 @@ class CfgMagazines {
 		displayNameShort = "M718 MAT";
 		itc_land_charge_format = "itc_land_m109mat_chg%1";
 		itc_land_timeModifier = -1.2;
-		itc_land_btabListFile = "itc_land_rhsusaf_m109\ballistics\tables\m109\list.sqf";
+		itc_land_btabListFile = "itc_land_gm_m109\ballistics\tables\m109\list.sqf";
 	};
 	class itc_land_m109mat_chg1: itc_land_m109mat { initSpeed = 92; itc_land_CountInAH = 0;  };
 	class itc_land_m109mat_chg2: itc_land_m109mat { initSpeed = 170; itc_land_CountInAH = 0;  };
@@ -65,7 +65,7 @@ class CfgMagazines {
 		displayNameShort = "M731 MAP";
 		itc_land_charge_format = "itc_land_m109map_chg%1";
 		itc_land_timeModifier = -1.5;
-		itc_land_btabListFile = "itc_land_rhsusaf_m109\ballistics\tables\m109\list.sqf";
+		itc_land_btabListFile = "itc_land_gm_m109\ballistics\tables\m109\list.sqf";
 	};
 	class itc_land_m109map_chg1: itc_land_m109map { initSpeed = 92; itc_land_CountInAH = 0;  };
 	class itc_land_m109map_chg2: itc_land_m109map { initSpeed = 170; itc_land_CountInAH = 0;  };
@@ -79,7 +79,7 @@ class CfgMagazines {
 		displayName = "M982 GPS GUIDED";
 		displayNameShort = "M982 PGM";
 		itc_land_charge_format = "itc_land_m109pgm_chg%1";
-		itc_land_btabListFile = "itc_land_rhsusaf_m109\ballistics\tables\m109\list.sqf";
+		itc_land_btabListFile = "itc_land_gm_m109\ballistics\tables\m109\list.sqf";
 	};
 	class itc_land_m109pgm_chg1: itc_land_m109pgm { initSpeed = 92; itc_land_CountInAH = 0;  };
 	class itc_land_m109pgm_chg2: itc_land_m109pgm { initSpeed = 170; itc_land_CountInAH = 0;  };
@@ -93,7 +93,7 @@ class CfgMagazines {
 		displayName = "M712 LASER GUIDED";
 		displayNameShort = "M712 LGM";
 		itc_land_charge_format = "itc_land_m109lgm_chg%1";
-		itc_land_btabListFile = "itc_land_rhsusaf_m109\ballistics\tables\m109\list.sqf";
+		itc_land_btabListFile = "itc_land_gm_m109\ballistics\tables\m109\list.sqf";
 	};
 	class itc_land_m109lgm_chg1: itc_land_m109lgm { initSpeed = 92; itc_land_CountInAH = 0;  };
 	class itc_land_m109lgm_chg2: itc_land_m109lgm { initSpeed = 170; itc_land_CountInAH = 0;  };
@@ -107,7 +107,7 @@ class CfgMagazines {
 		displayName = "M485 ILLUM";
 		displayNameShort = "M485 ILLUM";
 		itc_land_charge_format = "itc_land_m109ill_chg%1";
-		itc_land_btabListFile = "itc_land_rhsusaf_m109\ballistics\tables\m109\list.sqf";
+		itc_land_btabListFile = "itc_land_gm_m109\ballistics\tables\m109\list.sqf";
 	};
 	class itc_land_m109ill_chg1: itc_land_m109ill { initSpeed = 92; itc_land_CountInAH = 0;  };
 	class itc_land_m109ill_chg2: itc_land_m109ill { initSpeed = 170; itc_land_CountInAH = 0;  };
