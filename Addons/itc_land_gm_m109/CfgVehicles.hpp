@@ -68,8 +68,90 @@ class CfgVehicles {
 				class MainTurret: MainTurret { };
 		};
 	};
-	class itc_land_gm_ge_army_m109g: gm_ge_army_m109g_base {
+	class itc_land_m109g_base: gm_m109g_base {
+        class ACE_SelfActions: ACE_SelfActions {};
+		class AnimationSources: AnimationSources {};
+		class Turrets: Turrets {
+				class MainTurret: MainTurret { };
+		};
+	};
+
+	class itc_land_gm_ge_army_m109g_wdl_base: gm_ge_army_m109g_base {
+        class ACE_SelfActions: ACE_SelfActions {};
+		class AnimationSources: AnimationSources {};
+		class Turrets: Turrets {
+				class MainTurret: MainTurret { };
+		};
+	};
+
+	class itc_land_gm_ge_army_m109g_win_base: gm_ge_army_m109g_base
+    {
+    	class ACE_SelfActions: ACE_SelfActions {};
+		class AnimationSources: AnimationSources {};
+		class Turrets: Turrets {
+				class MainTurret: MainTurret { };
+		};
+    };
+    class itc_land_gm_ge_army_m109g_wiw_base: gm_ge_army_m109g_base
+    {
+    	class ACE_SelfActions: ACE_SelfActions {};
+		class AnimationSources: AnimationSources {};
+		class Turrets: Turrets {
+				class MainTurret: MainTurret { };
+		};
+    };
+    class itc_land_gm_ge_army_m109g_oli_base: gm_ge_army_m109g_base
+    {
+    	class ACE_SelfActions: ACE_SelfActions {};
+		class AnimationSources: AnimationSources {};
+		class Turrets: Turrets {
+				class MainTurret: MainTurret { };
+		};
+    };
+    class itc_land_gm_ge_army_m109g_ols_base: gm_ge_army_m109g_base
+    {
+    	class ACE_SelfActions: ACE_SelfActions {};
+		class AnimationSources: AnimationSources {};
+		class Turrets: Turrets {
+				class MainTurret: MainTurret { };
+		};
+    };
+    class itc_land_gm_ge_army_m109g_olw_base: gm_ge_army_m109g_base
+    {
+    	class ACE_SelfActions: ACE_SelfActions {};
+		class AnimationSources: AnimationSources {};
+		class Turrets: Turrets {
+				class MainTurret: MainTurret { };
+		};
+    };
+    class itc_land_gm_ge_army_m109g_des_base: gm_ge_army_m109g_base
+    {
+    	class ACE_SelfActions: ACE_SelfActions {};
+		class AnimationSources: AnimationSources {};
+		class Turrets: Turrets {
+				class MainTurret: MainTurret { };
+		};
+    };
+    class itc_land_gm_ge_army_m109g_trp_base: gm_ge_army_m109g_base
+    {
+    	class ACE_SelfActions: ACE_SelfActions {};
+		class AnimationSources: AnimationSources {};
+		class Turrets: Turrets {
+				class MainTurret: MainTurret { };
+		};
+    };
+    class itc_land_gm_ge_army_m109g_un_base: gm_ge_army_m109g_base
+    {
+    	class ACE_SelfActions: ACE_SelfActions {};
+		class AnimationSources: AnimationSources {};
+		class Turrets: Turrets {
+				class MainTurret: MainTurret { };
+		};
+    };
+
+	class itc_land_gm_ge_army_m109g_wdl: itc_land_gm_ge_army_m109g_wdl_base {
 		displayname = "M109G mod. 0 Paladin 2 (WD) GER";
+		scope = 1;
 		scopeCurator = 2;
         class ACE_SelfActions: ACE_SelfActions {
             class ITC_Land_SPHammohandler {
@@ -113,6 +195,32 @@ class CfgVehicles {
 			};
 		};
 		class AnimationSources: AnimationSources {};
+	};
+
+	class itc_land_gm_ge_army_m109g_win: itc_land_gm_ge_army_m109g_wdl {
+		displayname = "M109G mod. 0 Paladin 2 (WD) WIN";
+	};
+	class itc_land_gm_ge_army_m109g_wiw: itc_land_gm_ge_army_m109g_wdl {
+		displayname = "M109G mod. 0 Paladin 2 (WD) WIW";
+	};
+	class itc_land_gm_ge_army_m109g_oli: itc_land_gm_ge_army_m109g_wdl {
+		displayname = "M109G mod. 0 Paladin 2 (WD) OLI";
+	};
+	class itc_land_gm_ge_army_m109g_ols: itc_land_gm_ge_army_m109g_wdl {
+		displayname = "M109G mod. 0 Paladin 2 (WD) OLS";
+	};
+
+	class itc_land_gm_ge_army_m109g_olw: itc_land_gm_ge_army_m109g_wdl {
+		displayname = "M109G mod. 0 Paladin 2 (WD) OLW";
+	};
+	class itc_land_gm_ge_army_m109g_des: itc_land_gm_ge_army_m109g_wdl {
+		displayname = "M109G mod. 0 Paladin 2 (WD) DES";
+	};
+	class itc_land_gm_ge_army_m109g_trp: itc_land_gm_ge_army_m109g_wdl {
+		displayname = "M109G mod. 0 Paladin 2 (WD) TRP";
+	};
+	class itc_land_gm_ge_army_m109g_un: itc_land_gm_ge_army_m109g_wdl {
+		displayname = "M109G mod. 0 Paladin 2 (WD) UN";
 	};
 
 	class itc_land_gm_dk_army_m109: gm_dk_army_m109_base {
