@@ -1,0 +1,19 @@
+name = "TC LAND SYSTEMS GM"
+prefix = "TC_LAND_SYSTEMS_GM"
+author = "Nomisum, Salbei"
+files = [
+    "mod.cpp",
+    "itc-combo.paa",
+    "LICENSE",
+    "README.md"
+]
+
+key_name = "{{prefix}}_{{version}}"
+authority = "{{prefix}}_{{version}}-{{git \"id 8\"}}"
+
+releasebuild = [
+    "@zip TC_LAND_SYSTEMS_GM_{{semver.major}}.{{semver.minor}}.{{semver.patch}}.{{semver.build}}"
+]
+
+[header_exts]
+version= "{{git \"id 8\"}}"
