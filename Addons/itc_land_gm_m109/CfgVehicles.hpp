@@ -150,8 +150,8 @@ class CfgVehicles {
     };
 
 	class itc_land_gm_ge_army_m109g_wdl: itc_land_gm_ge_army_m109g_wdl_base {
-		displayname = "M109G mod. 0 Paladin 2 (WD) GER";
-		scope = 1;
+		displayname = "M109G mod. 0 (WD) GER";
+		scope = 2;
 		scopeCurator = 2;
         class ACE_SelfActions: ACE_SelfActions {
             class ITC_Land_SPHammohandler {
@@ -180,7 +180,6 @@ class CfgVehicles {
 				turretInfoType = "ITC_Land_RscAltGunnerSightSPH";
 				weapons[] = {"itc_land_gm_weap_m126"};
 				magazines[] = {
-					//	rhs_mag_155mm_m795_28, rhs_mag_155mm_m825a1_2, rhs_mag_155mm_485_2, rhs_mag_155mm_m712_2, rhs_mag_155mm_m731_1, rhs_mag_155mm_raams_1, rhs_mag_155mm_m864_3
 					mag_24("itc_land_m109hex"),
 					mag_4("itc_land_m109hex"),
 					mag_5("itc_land_m109smo"),
@@ -196,35 +195,8 @@ class CfgVehicles {
 		};
 		class AnimationSources: AnimationSources {};
 	};
-
-	class itc_land_gm_ge_army_m109g_win: itc_land_gm_ge_army_m109g_wdl {
-		displayname = "M109G mod. 0 Paladin 2 (WD) WIN";
-	};
-	class itc_land_gm_ge_army_m109g_wiw: itc_land_gm_ge_army_m109g_wdl {
-		displayname = "M109G mod. 0 Paladin 2 (WD) WIW";
-	};
-	class itc_land_gm_ge_army_m109g_oli: itc_land_gm_ge_army_m109g_wdl {
-		displayname = "M109G mod. 0 Paladin 2 (WD) OLI";
-	};
-	class itc_land_gm_ge_army_m109g_ols: itc_land_gm_ge_army_m109g_wdl {
-		displayname = "M109G mod. 0 Paladin 2 (WD) OLS";
-	};
-
-	class itc_land_gm_ge_army_m109g_olw: itc_land_gm_ge_army_m109g_wdl {
-		displayname = "M109G mod. 0 Paladin 2 (WD) OLW";
-	};
-	class itc_land_gm_ge_army_m109g_des: itc_land_gm_ge_army_m109g_wdl {
-		displayname = "M109G mod. 0 Paladin 2 (WD) DES";
-	};
-	class itc_land_gm_ge_army_m109g_trp: itc_land_gm_ge_army_m109g_wdl {
-		displayname = "M109G mod. 0 Paladin 2 (WD) TRP";
-	};
-	class itc_land_gm_ge_army_m109g_un: itc_land_gm_ge_army_m109g_wdl {
-		displayname = "M109G mod. 0 Paladin 2 (WD) UN";
-	};
-
 	class itc_land_gm_dk_army_m109: gm_dk_army_m109_base {
-		displayname = "M109 mod. 0 Paladin 2 (WD) DK";
+		displayname = "M109 mod. 0 (WD) DK";
 		scopeCurator = 2;
         class ACE_SelfActions: ACE_SelfActions {
             class ITC_Land_SPHammohandler {
