@@ -1,2 +1,11 @@
+release/**
+releases/*
+build_keys/*
+keys/*
+.hemtt/local
+/a3/
+/x/
 
-Addons/itc_land_gm_m109.pbo.bak
+*.pbo
+*.cache
+*.biprivatekey
