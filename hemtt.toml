@@ -1,5 +1,5 @@
-name = "TC LAND SYSTEMS GM"
-prefix = "TC_LAND_SYSTEMS_GM"
+name = "ITC LAND SYSTEMS GM"
+prefix = "itc_land_systems_gm"
 author = "Nomisum, Salbei"
 files = [
     "mod.cpp",
@@ -12,7 +12,7 @@ key_name = "{{prefix}}_{{version}}"
 authority = "{{prefix}}_{{version}}-{{git \"id 8\"}}"
 
 releasebuild = [
-    "@zip ITC_LAND_SYSTEMS_GM_{{semver.major}}.{{semver.minor}}.{{semver.patch}}.{{semver.build}}"
+    "@zip itc_land_systems_gm_{{semver.major}}.{{semver.minor}}.{{semver.patch}}.{{semver.build}}"
 ]
 
 [header_exts]
